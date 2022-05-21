@@ -1,6 +1,5 @@
 package com.invoice.display;
 
-import com.invoice.display.InvoiceMainFrame;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -23,8 +22,8 @@ public class InvoiceDialogBox extends JDialog {
         okBtn = new JButton("OK");
         cancelBtn = new JButton("Cancel");
         
-        okBtn.setActionCommand("NewInvoiceOK");
-        cancelBtn.setActionCommand("NewInvoiceCancel");
+        okBtn.setActionCommand("CRNewInvoiceOK");
+        cancelBtn.setActionCommand("CRNewInvoiceCancel");
         
         okBtn.addActionListener(frame.getController());
         cancelBtn.addActionListener(frame.getController());

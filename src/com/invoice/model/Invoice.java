@@ -8,16 +8,16 @@ public class Invoice {
     private String CustName;
     private ArrayList <InvoiceItem> items;
     //private double totalAmount;
-    
-     public Invoice() {
-    }
 
-      public Invoice(int InvNum, String InvDate, String CustName) {
+    public Invoice() {
+    }
+    
+    public Invoice(int InvNum, String InvDate, String CustName) {
         this.InvNum = InvNum;
         this.InvDate = InvDate;
         this.CustName = CustName;
     }
-      
+    
     public ArrayList <InvoiceItem> getItems() {
         if (items == null){
             items = new ArrayList<> ();
@@ -62,8 +62,10 @@ public class Invoice {
         return "Invoice{" + "InvNum=" + InvNum + ", InvDate=" + InvDate + ", CustName=" + CustName + '}';
     }
     
-    public String getCSVfile (){
-        return InvNum+ ","+ InvDate +","+CustName;
+    public String getCSVfile(){
+        return InvNum + ", " + InvDate + ", " + CustName;
     }
-
+    
 }
+
+

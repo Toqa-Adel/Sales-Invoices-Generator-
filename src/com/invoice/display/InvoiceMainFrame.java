@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 
 public class InvoiceMainFrame extends javax.swing.JFrame {
+
     
     public InvoiceMainFrame() {
       //  this.controller = new controller();
@@ -44,6 +45,7 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
         CustNameLabel = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jlablitemtable = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         loadMenuItem = new javax.swing.JMenuItem();
@@ -82,8 +84,6 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
 
         datalabel3.setText("Customer Name");
 
-        datalabel4.setText("Total Amount");
-
         jLabel5.setText("Invoices Table");
 
         itemsTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -111,6 +111,8 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
         });
 
         jlablitemtable.setText("Invoice Items Table");
+
+        jLabel1.setText("Total Amount");
 
         fileMenu.setText("File");
 
@@ -148,27 +150,32 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(8, 8, 8)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(datalabel2, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(datalabel1, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addGap(37, 37, 37)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(InvNOLabel)
-                                    .addComponent(InvDateLabel)))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(datalabel4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel13))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(datalabel3)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(CustNameLabel)))
-                            .addComponent(jlablitemtable)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(datalabel2, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(datalabel1, javax.swing.GroupLayout.Alignment.LEADING))
+                                        .addGap(37, 37, 37)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(InvNOLabel)
+                                            .addComponent(InvDateLabel)))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jLabel1)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel13))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(datalabel3)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(CustNameLabel)))
+                                    .addComponent(jlablitemtable)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(151, 151, 151)
+                                .addComponent(datalabel4))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel5)))
@@ -185,7 +192,7 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(InvNOLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(datalabel1)
                                 .addGap(7, 7, 7)
@@ -196,13 +203,18 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(datalabel3)
                                     .addComponent(CustNameLabel))
-                                .addGap(8, 8, 8)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(datalabel4)
-                                    .addComponent(jLabel13))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jlablitemtable)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(8, 8, 8)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(datalabel4)
+                                            .addComponent(jLabel13)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel1)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                                .addComponent(jlablitemtable)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -212,10 +224,8 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
                         .addComponent(deleteItemButton)
                         .addComponent(newItemButton))
                     .addComponent(newInvoiceButton))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
-
-        datalabel4.getAccessibleContext().setAccessibleName("TotalAmount");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -236,9 +246,12 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_deleteItemButtonActionPerformed
 
-   
+    /**
+     * @param args the command line arguments
+     * the latest project version
+     */
     public static void main(String args[]) {
-        
+       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new InvoiceMainFrame().setVisible(true);
@@ -259,6 +272,7 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
     private javax.swing.JMenu fileMenu;
     private javax.swing.JTable invoicesTable;
     private javax.swing.JTable itemsTable;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JMenuBar jMenuBar2;
@@ -274,21 +288,10 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     private ArrayList <Invoice> invoices;
     private controller controller = new controller(this);
-    private InvoicesTMmodel invTable;
     
-    public ArrayList<Invoice> getInvoices() {
-        if (invoices == null) invoices = new ArrayList<>();
-        return invoices;
-    }
-
-    public void setInvoices(ArrayList<Invoice> invoices) {
-        this.invoices = invoices;
-    }
+    private InvoicesTMmodel invTable;
 
     public InvoicesTMmodel getInvTable() {
-        if (invTable == null){
-            invTable = new InvoicesTMmodel (getInvoices());
-        }
         return invTable;
     }
 
@@ -307,7 +310,6 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
     public JLabel getCustNameLabel() {
         return CustNameLabel;
     }
-    
 
     public JLabel getInvDateLabel() {
         return InvDateLabel;
@@ -317,10 +319,6 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
         return InvNOLabel;
     }
 
-    public JLabel getDatalabel4() {
-        return datalabel4;
-    }
-    
     public JLabel getJlablitemtable() {
         return jlablitemtable;
     }
@@ -328,14 +326,31 @@ public class InvoiceMainFrame extends javax.swing.JFrame {
     public controller getController() {
         return controller;
     }
+
+    public JLabel getTotalAmount() {
+        return datalabel4;
+    }
+
     
-    public int getNextInvoiceNum() {
+    public ArrayList<Invoice> getInvoices() {
+        return invoices;
+    }
+
+    public void setInvoices(ArrayList<Invoice> invoices) {
+        this.invoices = invoices;
+    }
+    
+    public int getNextInvNum(){
         int num = 0;
-        for (Invoice invoice : invoices) {
-            if (invoice.getInvNum() > num) 
-            num = invoice.getInvNum();
+        
+        for (Invoice invoice : invoices){
+            if(invoice.getInvNum() > num ){
+                num = invoice.getInvNum();
+            }            
         }
+        
         return ++num;
-    }  
+    }
+
 }
 

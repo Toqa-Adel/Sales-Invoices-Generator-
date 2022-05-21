@@ -27,7 +27,6 @@ public class InvoicesTMmodel extends AbstractTableModel {
         return columns.length;
     }
 
-    
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         Invoice inv = invoices.get(rowIndex);
